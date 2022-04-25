@@ -4,3 +4,4 @@
 
 /.vs
 /node/nest/node_modules
+/node/nest/dist

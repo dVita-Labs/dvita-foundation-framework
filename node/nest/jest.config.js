@@ -16,7 +16,9 @@ module.exports = {
     "^.+\\.tsx?$": "ts-jest",
   },
   testPathIgnorePatterns: [
-    "testConstants.ts"
+    "testConstants.ts",
+    ".*/lib/",
+    ".*/dist/"
   ],
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
 };
