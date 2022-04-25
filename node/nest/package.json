@@ -23,7 +23,7 @@
     "@nestjs/swagger": "^5.1.4",
     "@nestjs/typeorm": "^8.0.2",
     "@nestjs/websockets": "^8.4.4",
-    "@cityofzion/neon-js":"^5.0.0"
+    "@cityofzion/neon-js": "^5.0.0"
   },
   "devDependencies": {
     "@nestjs/cli": "8.1.4",
