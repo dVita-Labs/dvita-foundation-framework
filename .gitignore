@@ -2,6 +2,11 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
+.vs/
 /node/nest/node_modules
 /node/nest/dist
+*.suo
+*.user
+[Bb]in/
+[Oo]bj/
+dist/
