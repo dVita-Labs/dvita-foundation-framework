@@ -28,8 +28,8 @@ namespace DvitaFoundationFramework.tests
             var sender = Contract.CreateSignatureContract(key.PublicKey).ScriptHash;
 
             var script = tokenHashAsUint.MakeScript("mint", sender, 10);
-            var cosigners = new[] { new Signer { Scopes = WitnessScope.CalledByEntry, Account = sender } };
-            var txManager = await new TransactionManagerFactory(Client.RpcClient).MakeTransactionAsync(script, cosigners);
+            var signers = new[] { new Signer { Scopes = WitnessScope.CalledByEntry, Account = sender } };
+            var txManager = await new TransactionManagerFactory(Client.RpcClient).MakeTransactionAsync(script, signers);
             var tx = await txManager.AddSignature(key).SignAsync();
             await Client.RpcClient.SendRawTransactionAsync(tx);
             var txState = await Client.WalletAPI.WaitTransactionAsync(tx);
