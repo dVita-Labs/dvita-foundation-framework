@@ -1,0 +1,48 @@
+{
+  "ApplicationConfiguration": {
+    "Logger": {
+      "Path": "/nxa-node-data/Logs_{0}",
+      "ConsoleOutput": true,
+      "Active": true
+    },
+    "Storage": {
+      "Engine": "LevelDBStore",
+      "Path": "Data_LevelDB_{0}"
+    },
+    "P2P": {
+      "Port": 20333,
+      "WsPort": 20334
+    },
+    "RPC": {
+      "BindAddress": "127.0.0.1",
+      "Port": 20332,
+      "SslCert": "",
+      "SslCertPassword": ""
+    },
+    "UnlockWallet": {
+      "Path": "/nxa-node-data/core.wallet.json",
+      "Password": "1",
+      "IsActive": true,
+      "StartConsensus": true
+    },
+    "PluginURL": ""
+  },
+  "ProtocolConfiguration": {
+    "Network": 199,
+    "MillisecondsPerBlock": 15000,
+    "MaxTraceableBlocks": 2102400,
+    "ValidatorsCount": 4,
+    "StandbyCommittee": [
+      "0264b5ff308d12d9dcbcb929784278a666f988d8a9388e61653cf5c22cb9d05864",
+      "0384be83f3b9a5f28650e255b808a248e86465c62e64a12d9a592350b224e02f6f",
+      "03e0e908d30c8585c39de45056f2702778c660a561aa4aa60d18be15441e55f5c0",
+      "026a7d8beae7163109aabb87e75af0ae1946a80a093a7e6fd4b36086b58527e87d"
+    ],
+    "SeedList": [
+      "seed1.testnet.dvita.com:21333",
+      "seed2.testnet.dvita.com:22333",
+      "seed3.testnet.dvita.com:23333",
+      "seed4.testnet.dvita.com:24333"
+    ]
+  }
+}
