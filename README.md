@@ -7,5 +7,5 @@ TypeScript Documentation
 
 C# Documentation
 ----------------
-[cs/src/README.md](https://github.com/dVita-Labs/dvita-foundation-framework/blob/main/cs/src/README.md)  
+[cs/README.md](https://github.com/dVita-Labs/dvita-foundation-framework/blob/main/cs/README.md)  
 
